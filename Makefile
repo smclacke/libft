@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/04 20:06:02 by smclacke      #+#    #+#                  #
-#    Updated: 2023/03/04 23:04:01 by smclacke      ########   odam.nl          #
+#    Updated: 2023/03/04 23:09:04 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,31 +67,21 @@ SRCS = ft_isalpha.c			\
 
 
 
-OBJ_DIR		= obj
+OBJ_DIR		= obj/
 OBJS 		= $(SRCS:.c=.o)
-OBJ 		= $(addprefix $(OBJ_DIR)/, $(OBJS))
-
-# OBJS 		=	$(SRCS:%.c=%.o)
+OBJ 		= $(addprefix $(OBJ_DIR), $(OBJS))
 
 ALL = $(OBJS)
 
 all: $(NAME)
 
 
-# %.o: %.c $(HEADER)
-# 	@ $(CC) $(CFLAGS) $(HEADER) -c -o $@ $<
-
-
-
-# $(OBJ_DIR)%.o: $(SRC_DIR)%.c
-# 	@$(CC) $(CFLAGS) $(HEADER) -c -o $@ $<
-
-
-
 $(NAME):  $(OBJ_DIR) $(ALL) $(HEADER)
 	ar rcs $(NAME) $(OBJS)
 	@ echo "Made!"
 
+$(OBJ_DIR)%.o: $(SRCS)%.c $(HEADER)
+	@$(CC) $(CFLAGS) $(HEADER) -c -o $@ $<
 
 $(OBJ_DIR):
 	@ mkdir -p obj
