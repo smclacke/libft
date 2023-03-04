@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/04 20:06:02 by smclacke      #+#    #+#                  #
-#    Updated: 2023/03/04 22:38:38 by smclacke      ########   odam.nl          #
+#    Updated: 2023/03/04 23:04:01 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,29 +65,39 @@ SRCS = ft_isalpha.c			\
 		ft_isspace.c		\
 		ft_strcmp.c
 
-SRC_DIR		:=	src
-SRC			:=	$(addprefix $(SRC_DIR)/, $(SRCS))
 
-OBJ_DIR		:=	obj
-OBJS 		:=	$(SRCS:.c=.o)
-OBJ 		:=	$(addprefix $(OBJ_DIR)/, $(OBJS))
-# OBJ = $(addprefix $(OBJ_DIR)/, $(notdir $(SRC:.c=.o)))
+
+OBJ_DIR		= obj
+OBJS 		= $(SRCS:.c=.o)
+OBJ 		= $(addprefix $(OBJ_DIR)/, $(OBJS))
+
+# OBJS 		=	$(SRCS:%.c=%.o)
+
+ALL = $(OBJS)
 
 all: $(NAME)
 
-$(NAME): $(OBJ_DIR)
-	ar rcs $(NAME) $(ALL) $(OBJ)
+
+# %.o: %.c $(HEADER)
+# 	@ $(CC) $(CFLAGS) $(HEADER) -c -o $@ $<
+
+
+
+# $(OBJ_DIR)%.o: $(SRC_DIR)%.c
+# 	@$(CC) $(CFLAGS) $(HEADER) -c -o $@ $<
+
+
+
+$(NAME):  $(OBJ_DIR) $(ALL) $(HEADER)
+	ar rcs $(NAME) $(OBJS)
 	@ echo "Made!"
 
-%.o: %.c
-	@ $(CC) $(CFLAGS) $(HEADER) -c -o $@ $<
 
 $(OBJ_DIR):
 	@ mkdir -p obj
 
-
 clean:
-	@ rm -rf $(OBJ_DIR)
+	@ rm -rf $(OBJS) $(OBJ_DIR)
 	@ echo "Clean!"
 
 fclean: clean
