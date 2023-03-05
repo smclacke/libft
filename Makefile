@@ -1,21 +1,21 @@
 # **************************************************************************** #
 #                                                                              #
-#                                                         ::::::::             #
-#    Makefile                                           :+:    :+:             #
-#                                                      +:+                     #
-#    By: smclacke <smclacke@student.codam.nl>         +#+                      #
-#                                                    +#+                       #
-#    Created: 2023/03/04 20:06:02 by smclacke      #+#    #+#                  #
-#    Updated: 2023/03/04 23:09:04 by smclacke      ########   odam.nl          #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/03/04 20:06:02 by smclacke          #+#    #+#              #
+#    Updated: 2023/03/05 14:34:26 by SarahLouise      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+NAME		= libft.a
 
-HEADER = libft.h
+HEADER		= src/
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I
 
 SRCS = ft_isalpha.c			\
 		ft_isalnum.c		\
@@ -65,29 +65,38 @@ SRCS = ft_isalpha.c			\
 		ft_isspace.c		\
 		ft_strcmp.c
 
-
+SRC_DIR		=	src/
+SRC			=	$(addprefix $(SRC_DIR), $(SRCS))
 
 OBJ_DIR		= obj/
-OBJS 		= $(SRCS:.c=.o)
-OBJ 		= $(addprefix $(OBJ_DIR), $(OBJS))
+# OBJS 		= $(SRCS:.c=.o)
+OBJ 		= $(addprefix $(OBJ_DIR), $(SRCS:.c=.o))
 
-ALL = $(OBJS)
 
 all: $(NAME)
 
-
-$(NAME):  $(OBJ_DIR) $(ALL) $(HEADER)
-	ar rcs $(NAME) $(OBJS)
+$(NAME): $(OBJ_DIR) $(OBJ)
+	ar -rcs $(NAME) $(OBJ)
 	@ echo "Made!"
 
-$(OBJ_DIR)%.o: $(SRCS)%.c $(HEADER)
-	@$(CC) $(CFLAGS) $(HEADER) -c -o $@ $<
+
+$(OBJ_DIR)%.o: $(SRCS_DIR)%.c $(HEADER)
+	@$(CC) $(CFLAGS) -c $< -o $@
+
 
 $(OBJ_DIR):
-	@ mkdir -p obj
+	@ mkdir -p $(OBJ_DIR)
+
+
+
+
+
+
+
+
 
 clean:
-	@ rm -rf $(OBJS) $(OBJ_DIR)
+	@ rm -rf $(OBJ_DIR)
 	@ echo "Clean!"
 
 fclean: clean
