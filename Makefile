@@ -6,7 +6,7 @@
 #    By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/05 21:10:20 by smclacke          #+#    #+#              #
-#    Updated: 2023/03/06 01:26:39 by SarahLouise      ###   ########.fr        #
+#    Updated: 2023/03/06 01:28:21 by SarahLouise      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,7 +71,7 @@ OBJ = $(addprefix $(OBJ_DIR)/, $(OBJS))
 
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -Iinclude/ -Iinclude/libft/ -MMD -MP
+CFLAGS = -Wall -Wextra -Werror -Iinclude/ -Iinclude/libft/
 ARCHIVE = ar rcs
 RM = rm -f
 
@@ -83,15 +83,11 @@ $(OBJ_DIR):
 	@ mkdir -p $(OBJ_DIR)
 
 $(NAME): $(OBJ)
-# @ $(ARCHIVE) $(NAME)
 	@ $(ARCHIVE) $(NAME) $(addprefix $(OBJ_DIR)/, $(ALL))
 	@ echo "Made!"
 
-# $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(OBJ_DIR)
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(HEADER) | $(OBJ_DIR)
 	@ $(CC) $(CFLAGS) -c -o $@ $<
-
--include $(OBJ:.o=.d)
 
 clean:
 	@ $(RM) -rf $(OBJ_DIR)
