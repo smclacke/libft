@@ -1,18 +1,18 @@
 # **************************************************************************** #
 #                                                                              #
-#                                                         ::::::::             #
-#    Makefile                                           :+:    :+:             #
-#                                                      +:+                     #
-#    By: smclacke <smclacke@student.codam.nl>         +#+                      #
-#                                                    +#+                       #
-#    Created: 2023/03/05 21:10:20 by smclacke      #+#    #+#                  #
-#    Updated: 2023/03/05 21:44:24 by smclacke      ########   odam.nl          #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/03/05 21:10:20 by smclacke          #+#    #+#              #
+#    Updated: 2023/03/06 01:26:39 by SarahLouise      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-HEADER = libft.h
+HEADER = include/libft.h
 
 SRCS = ft_isalpha.c \
     ft_isalnum.c    \
@@ -71,7 +71,7 @@ OBJ = $(addprefix $(OBJ_DIR)/, $(OBJS))
 
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -Iinclude/
+CFLAGS = -Wall -Wextra -Werror -Iinclude/ -Iinclude/libft/ -MMD -MP
 ARCHIVE = ar rcs
 RM = rm -f
 
@@ -83,12 +83,15 @@ $(OBJ_DIR):
 	@ mkdir -p $(OBJ_DIR)
 
 $(NAME): $(OBJ)
+# @ $(ARCHIVE) $(NAME)
 	@ $(ARCHIVE) $(NAME) $(addprefix $(OBJ_DIR)/, $(ALL))
 	@ echo "Made!"
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(OBJ_DIR)
+# $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(OBJ_DIR)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(HEADER) | $(OBJ_DIR)
 	@ $(CC) $(CFLAGS) -c -o $@ $<
 
+-include $(OBJ:.o=.d)
 
 clean:
 	@ $(RM) -rf $(OBJ_DIR)
