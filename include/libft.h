@@ -6,14 +6,13 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/11 19:21:06 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/03/04 16:04:20 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/03/11 16:13:31 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include "libft.h"
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
@@ -128,6 +127,6 @@ int		ft_isspace(int c);
 
 int		ft_ishex(int c);
 
-double	ft_atof(char *str);
+double	ft_atof(const char *str);
 
 #endif
