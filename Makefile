@@ -6,13 +6,11 @@
 #    By: SarahLouise <SarahLouise@student.42.fr>      +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/05 21:10:20 by smclacke      #+#    #+#                  #
-#    Updated: 2023/03/18 22:18:56 by smclacke      ########   odam.nl          #
+#    Updated: 2023/03/23 17:41:49 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-
-HEADER = include/libft.h
 
 SRCS = ft_isalpha.c \
     ft_isalnum.c    \
@@ -48,7 +46,7 @@ SRCS = ft_isalpha.c \
     ft_strmapi.c    \
     ft_itoa.c       \
     ft_split.c      \
-    ft_lstadd_back.c  \
+	ft_lstadd_back.c  \
     ft_lstadd_front.c \
     ft_lstclear.c     \
     ft_lstdelone.c    \
@@ -63,6 +61,11 @@ SRCS = ft_isalpha.c \
 	ft_strcmp.c       \
 	ft_lower_str.c    \
 
+CC = gcc
+CFLAGS = -Wall -Wextra -Werror
+ARCHIVE = ar -rcs
+RM = rm -f
+
 SRC_DIR = src
 SRC = $(addprefix $(SRC_DIR)/, $(SRCS))
 
@@ -70,24 +73,14 @@ OBJ_DIR = obj
 OBJS = $(SRCS:%.c=%.o)
 OBJ = $(addprefix $(OBJ_DIR)/, $(OBJS))
 
-
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror -Iinclude/ -Iinclude/libft/
-ARCHIVE = ar rcs
-RM = rm -f
-
-ALL = $(OBJS)
-
 all: $(NAME)
 
-$(OBJ_DIR):
-	@ mkdir -p $(OBJ_DIR)
-
 $(NAME): $(OBJ)
-	@ $(ARCHIVE) $(NAME) $(addprefix $(OBJ_DIR)/, $(ALL))
+	@ $(ARCHIVE) $(NAME) $(OBJ)
 	@ echo "Made!"
 
-$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c $(HEADER) | $(OBJ_DIR)
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
+	@ mkdir -p $(OBJ_DIR)
 	@ $(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
