@@ -1,28 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lower_str.c                                     :+:    :+:            */
+/*   ft_putchar.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
+/*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/03/18 22:17:06 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/03/31 16:59:54 by smclacke      ########   odam.nl         */
+/*   Created: 2023/03/31 17:02:57 by smclacke      #+#    #+#                 */
+/*   Updated: 2023/03/31 17:04:07 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_lower_str(char *str)
+int	ft_putchar(char c)
 {
-	int		len;
-	int		i;
-
-	i = 0;
-	len = ft_strlen(str);
-	while (i < len)
-	{
-		str[i] = ft_tolower(str[i]);
-		i++;
-	}
-	return (str);
+	write (1, &c, 1);
+	return (1);
 }

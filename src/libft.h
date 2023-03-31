@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 19:21:06 by smclacke          #+#    #+#             */
-/*   Updated: 2023/03/28 01:59:36 by SarahLouise      ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   libft.h                                            :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2022/10/11 19:21:06 by smclacke      #+#    #+#                 */
+/*   Updated: 2023/03/31 17:05:00 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,5 +129,11 @@ int		ft_ishex(int c);
 double	ft_atof(char *str);
 
 char	*ft_lower_str(char *str);
+
+void	ft_putendl(char *s);
+
+void	ft_putstr(char *str);
+
+int		ft_putchar(char c);
 
 #endif
