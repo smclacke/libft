@@ -1,4 +1,4 @@
-# library_42
+# libft
 
 ![Codam_Header](https://user-images.githubusercontent.com/115113929/229159933-c1150666-3f6f-41cf-8426-3ac1e262e320.jpeg)
 
