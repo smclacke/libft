@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/11 19:21:06 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/03/31 17:05:00 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/03/31 21:13:48 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -135,5 +135,7 @@ void	ft_putendl(char *s);
 void	ft_putstr(char *str);
 
 int		ft_putchar(char c);
+
+int		ft_arrlen(char **arr);
 
 #endif
