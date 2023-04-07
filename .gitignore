@@ -1,3 +1,6 @@
+# ignore all
+*
+
 # Object files
 *.o
 *.obj
