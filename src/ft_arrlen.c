@@ -6,12 +6,11 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 18:53:57 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/03/31 21:13:01 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/07 14:40:39 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_arrlen(char **arr)
 {
