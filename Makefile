@@ -6,7 +6,7 @@
 #    By: SarahLouise <SarahLouise@student.42.fr>      +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/05 21:10:20 by smclacke      #+#    #+#                  #
-#    Updated: 2023/04/07 14:37:46 by smclacke      ########   odam.nl          #
+#    Updated: 2023/04/08 17:17:21 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,11 +78,22 @@ CFLAGS = -Wall -Wextra -Werror
 ARCHIVE = ar rcs
 RM = rm -f
 
+## Colours ##
+RESET		:= \033[0m
+RED			:= \033[1;91m
+GREEN		:= \033[1;92m
+YELLOW		:= \033[1;93m
+BLUE		:= \033[1;94m
+PURPLE		:= \033[1;95m
+CYAN		:= \033[1;96m
+WHITE		:= \033[1;97m
+BLACK		:= \033[1;90m
+
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	@ $(ARCHIVE) $(NAME) $(OBJ)
-	@ echo "Made!"
+	@ echo "${GREEN}libft Made!${RESET}"
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@ mkdir -p $(OBJ_DIR)
@@ -90,11 +101,11 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 
 clean:
 	@ $(RM) -rf $(OBJ_DIR)
-	@ echo "Clean!"
+	@ echo "${YELLOW}libft Clean!${RESET}"
 
 fclean: clean
 	@ $(RM) $(NAME)
-	@ echo "fCleaned!"
+	@ echo "${RED}libft fCleaned!${RESET}"
 
 re: fclean all
 
