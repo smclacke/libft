@@ -6,7 +6,7 @@
 #    By: SarahLouise <SarahLouise@student.42.fr>      +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/05 21:10:20 by smclacke      #+#    #+#                  #
-#    Updated: 2023/04/08 17:17:21 by smclacke      ########   odam.nl          #
+#    Updated: 2023/04/08 17:19:35 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -92,6 +92,7 @@ BLACK		:= \033[1;90m
 all: $(NAME)
 
 $(NAME): $(OBJ)
+	@ echo "${RED}libft compiling...${RESET}"
 	@ $(ARCHIVE) $(NAME) $(OBJ)
 	@ echo "${GREEN}libft Made!${RESET}"
 
@@ -101,11 +102,10 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 
 clean:
 	@ $(RM) -rf $(OBJ_DIR)
-	@ echo "${YELLOW}libft Clean!${RESET}"
 
 fclean: clean
 	@ $(RM) $(NAME)
-	@ echo "${RED}libft fCleaned!${RESET}"
+	@ echo "${YELLOW}libft fCleaned!${RESET}"
 
 re: fclean all
 
