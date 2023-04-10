@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        ::::::::            */
-/*   libft.h                                            :+:    :+:            */
-/*                                                     +:+                    */
-/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
-/*                                                   +#+                      */
-/*   Created: 2022/10/11 19:21:06 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/08 18:09:55 by smclacke      ########   odam.nl         */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/11 19:21:06 by smclacke          #+#    #+#             */
+/*   Updated: 2023/04/10 16:38:57 by SarahLouise      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,8 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stdio.h>
 # include <stdlib.h>
-# include <string.h>
-# include <sys/queue.h>
-# include <stdarg.h>
-# include <limits.h>
-# include <fcntl.h>
+# include <stdio.h>
 
 //--------------- libft -----------------------//
 
@@ -134,7 +129,7 @@ void	ft_putendl(char *s);
 
 void	ft_putstr(char *str);
 
-int		ft_putchar(char c);
+void	ft_putchar(char c);
 
 int		ft_arrlen(char **arr);
 
