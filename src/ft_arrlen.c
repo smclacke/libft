@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_arrlen.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
+/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 18:53:57 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/07 15:28:28 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/10 16:45:59 by SarahLouise   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,3 @@ int	ft_arrlen(char **arr)
 	return (i);
 }
 
-// int	main(int argc, char **argv)
-// {
-// 	if (argc < 20)
-// 	{
-// 		printf("%s\n", *argv);
-// 		printf("%d\n", ft_arrlen(argv));
-// 	}
-// }

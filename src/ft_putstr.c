@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_putstr.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
+/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/31 17:02:40 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/03/31 17:02:42 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/10 16:44:47 by SarahLouise   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,5 @@
 
 void	ft_putstr(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		write(1, &str[i], 1);
-		i++;
-	}
+	write(1, str, ft_strlen(str));
 }
