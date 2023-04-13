@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: SarahLouise <SarahLouise@student.42.fr>    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 19:21:06 by smclacke          #+#    #+#             */
-/*   Updated: 2023/04/10 16:38:57 by SarahLouise      ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   libft.h                                            :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2022/10/11 19:21:06 by smclacke      #+#    #+#                 */
+/*   Updated: 2023/04/13 21:09:13 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <stdio.h>
+# include <limits.h>
 
 //--------------- libft -----------------------//
 
@@ -112,6 +113,24 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+//----------- get_next_line --------------//
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
+size_t	gnl_strlen(const char *s, int temp);
+
+char	*gnl_strdup(const char *s1);
+
+char	*gnl_strjoin(char const *s1, char const *s2);
+
+char	*gnl_strchr(const char *s, int c);
+
+size_t	gnl_strlcpy(char *dst, const char *src, size_t dstsize);
+
+char	*get_next_line(int fd);
 
 //--------------- Extra ------------------//
 

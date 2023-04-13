@@ -1,6 +1,12 @@
 # ignore all
 *
 
+# Unignore all dirs
+!*/
+
+# Unignore all with extensions
+!*.*
+
 # Object files
 *.o
 *.obj
