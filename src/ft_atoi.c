@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/24 15:39:55 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/15 17:16:11 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/15 17:22:41 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_atoi(const char *str)
 	int	neg;
 	int	num;
 	int	i;
-	long result;
+	long result = 0;
 
 	i = 0;
 	neg = 1;
@@ -42,7 +42,7 @@ int	ft_atoi(const char *str)
 	{
 		printf("im here\n");
 		ft_error();
-		return ;
+		return (0);
 	}
 	return (num * neg);
 }
