@@ -6,7 +6,7 @@
 #    By: SarahLouise <SarahLouise@student.42.fr>      +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/05 21:10:20 by smclacke      #+#    #+#                  #
-#    Updated: 2023/04/15 16:39:16 by smclacke      ########   odam.nl          #
+#    Updated: 2023/04/15 16:49:35 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -66,7 +66,7 @@ SRCS =	ft_isalpha.c			\
 		ft_arrlen.c				\
 		ft_error.c				\
 		get_next_line.c			\
-		get_next_line_utils.c	\
+		get_next_line_utils.c
 
 SRC_DIR = src
 SRC = $(addprefix $(SRC_DIR)/, $(SRCS))

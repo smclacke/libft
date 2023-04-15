@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/24 15:39:55 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/15 16:38:57 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/15 17:16:11 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,19 +36,23 @@ int	ft_atoi(const char *str)
 		num = num * 10 + (str[i] - 48);
 		i++;
 	}
-	result = num * neg;
-	printf("result: %ld\n, num: %d\n, neg: %d\n", result, num, neg);
+	result += num * neg;
+	// printf("result: %ld\n, num: %d\n, neg: %d\n", result, num, neg);
 	if (result > INT_MAX || result < INT_MIN)
+	{
+		printf("im here\n");
 		ft_error();
+		return ;
+	}
 	return (num * neg);
 }
 
-int	main()
-{
-	char	*str = "89";
-	printf("before: %s\n", str);
-	ft_atoi(str);
-	printf("after: %s\n", str);
-	// printf("atoi: %d\n", ft_atoi("-2147483649"));
-	// printf("atoi: %d\n", ft_atoi("89"));
-}
+// int	main()
+// {
+// 	char	*str = "49";
+// 	// printf("before: %s\n", str);
+// 	ft_atoi(str);
+// 	// printf("after: %s\n", str);
+// 	// printf("atoi: %d\n", ft_atoi("-2147483649"));
+// 	// printf("atoi: %d\n", ft_atoi("89"));
+// }
