@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/24 15:39:55 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/18 17:05:00 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/04/18 17:36:12 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ int	ft_atoi(const char *str)
 		return (num * neg);
 	else
 	{
-		printf("error atoi\n");
-		return (EXIT_FAILURE);
+		ft_putendl("Error");
+		exit(EXIT_FAILURE);
 	}
 }
