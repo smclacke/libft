@@ -6,7 +6,7 @@
 #    By: SarahLouise <SarahLouise@student.42.fr>      +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/03/05 21:10:20 by smclacke      #+#    #+#                  #
-#    Updated: 2023/04/18 20:54:06 by smclacke      ########   odam.nl          #
+#    Updated: 2023/04/18 22:34:56 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,7 +65,7 @@ SRCS =	ft_isalpha.c			\
 		ft_putchar.c			\
 		ft_arrlen.c				\
 		ft_error.c				\
-		free_arr.c				\
+		ft_free_arr.c			\
 		get_next_line.c			\
 		get_next_line_utils.c
 
