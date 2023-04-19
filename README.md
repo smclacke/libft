@@ -8,5 +8,5 @@
 
 *Includes my own additional functions. To be used within other projects and continuously added to when needed.*
 
-**Functions include:**
+*Functions include:*
  - 
