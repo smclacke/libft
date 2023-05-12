@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/11 19:21:06 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/25 22:39:56 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/05/11 23:03:18 by SarahLouise   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -157,5 +157,7 @@ int		ft_arrlen(char **arr);
 void	ft_error(char *str);
 
 void	ft_free_arr(char **arr);
+
+char	**ft_split_quotes(char const *str, char c);
 
 #endif
