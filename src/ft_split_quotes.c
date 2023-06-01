@@ -6,11 +6,13 @@
 /*   By: SarahLouise <SarahLouise@student.codam.      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/05/11 23:03:34 by SarahLouise   #+#    #+#                 */
-/*   Updated: 2023/05/12 14:49:18 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/06/01 23:10:10 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+//this needs a lot of work
 
 static int	ft_quotes_delimiter(char **arr)
 {
@@ -51,18 +53,12 @@ static	int	ft_no_str(char const *str, char c)
 	int	count;
 
 	count = 0;
-	i = 0;
+	i = 1;
 	while (str[i])
 	{
-		if (str[i] == '\'' || str[i] == '\"')
-		{
-			count++;
-			break ;
-		}
 		if (str[i] != c)
 			count++;
-		while (str[i] != c && str[i + 1])
-			i++;
+		i++;
 	}
 	return (count);
 }
@@ -79,13 +75,13 @@ char	**ft_split_quotes(char const *str, char c)
 	arr = (char **)malloc(sizeof(char *) * (no_str + 1));
 	if (!arr)
 		return (NULL);
-	i = 0;
 	next = (char *)str;
+	i = 0;
 	len = 0;
 	while (i < no_str)
 	{
 		len = ft_arr_len(&next, c);
-		arr[i] = (char *)malloc(sizeof(char) * len + 1);
+		arr[i] = (char *)malloc(sizeof(char) * (len + 1));
 		if (!arr[i])
 			return (ft_free_arr(arr), NULL);
 		ft_strlcpy(arr[i], next - len, len + 1);
