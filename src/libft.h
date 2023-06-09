@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/11 19:21:06 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/06/09 12:18:20 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/06/09 12:19:13 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -135,10 +135,15 @@ char	*get_next_line(int fd);
 
 //-------------- ft_printf ----------------//
 int		ft_printf(const char *str, ...);
+
 int		putchar_lower(int c);
+
 int		putchar_upper(int c);
+
 int		print_nbr(long long n, int base);
+
 int		print_nbr2(unsigned long long n, unsigned int base);
+
 int		print_p(unsigned long long n, unsigned int base);
 
 //--------------- Extra ------------------//
