@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/05/12 14:53:21 by smclacke      #+#    #+#                  #
-#    Updated: 2023/05/12 14:53:23 by smclacke      ########   odam.nl          #
+#    Updated: 2023/06/09 12:17:28 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,7 +74,9 @@ SRCS		=	ft_isalpha.c			\
 				ft_free_arr.c			\
 				ft_split_quotes.c		\
 				get_next_line.c			\
-				get_next_line_utils.c
+				get_next_line_utils.c	\
+				ft_printf_utils.c		\
+				ft_printf.c
 
 SRC_DIR		= src
 SRC			= $(addprefix $(SRC_DIR)/, $(SRCS))
