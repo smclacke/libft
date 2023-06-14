@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/05/12 14:53:21 by smclacke      #+#    #+#                  #
-#    Updated: 2023/06/09 12:17:28 by smclacke      ########   odam.nl          #
+#    Updated: 2023/06/14 13:40:37 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRCS		=	ft_isalpha.c			\
     			ft_isascii.c			\
     			ft_isdigit.c			\
     			ft_isprint.c			\
+				ft_isquote.c			\
     			ft_strchr.c				\
     			ft_strrchr.c			\
     			ft_strlen.c				\

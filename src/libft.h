@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/11 19:21:06 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/06/09 12:19:13 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/06/14 13:40:32 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,6 +117,10 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 //----------- get_next_line --------------//
 
+# ifndef OPEN_MAX
+#  define OPEN_MAX 42
+# endif
+
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 42
 # endif
@@ -173,5 +177,7 @@ void	ft_error(char *str);
 void	ft_free_arr(char **arr);
 
 char	**ft_split_quotes(char const *str, char c);
+
+int		ft_isquote(char c);
 
 #endif

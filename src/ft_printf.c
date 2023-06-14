@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/11/24 15:47:53 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/06/09 12:18:13 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/06/12 21:28:40 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	print_string(char *str)
 	return (ft_strlen(str));
 }
 
- static int	ft_eval_format(char *str, va_list valist)
+static int	ft_eval_format(char *str, va_list valist)
 {
 	int	i;
 

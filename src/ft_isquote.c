@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_isalnum.c                                       :+:    :+:            */
+/*   ft_isquote.c                                       :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2022/11/24 15:40:13 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/06/14 09:47:34 by SarahLouise   ########   odam.nl         */
+/*   Created: 2023/06/14 13:22:48 by smclacke      #+#    #+#                 */
+/*   Updated: 2023/06/14 13:24:22 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalnum(int c)
+int	ft_isquote(char c)
 {
-	return (ft_isalpha(c) || ft_isdigit(c));
+	return (c == '\'');
 }
