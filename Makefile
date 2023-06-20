@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/05/12 14:53:21 by smclacke      #+#    #+#                  #
-#    Updated: 2023/06/14 13:40:37 by smclacke      ########   odam.nl          #
+#    Updated: 2023/06/20 11:41:08 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -73,7 +73,6 @@ SRCS		=	ft_isalpha.c			\
 				ft_arrlen.c				\
 				ft_error.c				\
 				ft_free_arr.c			\
-				ft_split_quotes.c		\
 				get_next_line.c			\
 				get_next_line_utils.c	\
 				ft_printf_utils.c		\
