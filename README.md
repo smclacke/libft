@@ -10,7 +10,7 @@
 
 ## ***Functions:***
 
-	***Libft mandatory:***
+	Libft mandatory:
 				ft_isalpha
     			ft_isalnum
     			ft_isascii
@@ -46,7 +46,7 @@
     			ft_strmapi
     			ft_itoa
     			ft_split
-	***Libft bonus:***
+	Libft bonus:
     			ft_lstadd_back
     			ft_lstadd_front
     			ft_lstclear
@@ -56,13 +56,13 @@
     			ft_lstmap
     			ft_lstnew
     			ft_lstsize
-	***Get_next_line:***
+	Get_next_line:
 				get_next_line
 				get_next_line_utils
-	***ft_printf:***
+	ft_printf:
 				ft_printf_utils
 				ft_printf
-	***Extra:***
+	Extra:
 				ft_atof
 				ft_ishex
 				ft_isspace
