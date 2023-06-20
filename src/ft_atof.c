@@ -6,12 +6,21 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/04 16:01:22 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/03/23 21:25:27 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/06/20 23:59:30 by SarahLouise   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+
+/**
+ * @brief parses the array and checks whether there is an positive or negative
+ * changes sign variable from positive to negative if '-' is found. 
+ * 
+ * @param str - array to convert
+ * @param sign - positive or negative 
+ * @return int - index after positive or negative sign
+ */
 int	check_sign(char *str, int *sign)
 {
 	int	i;
@@ -26,7 +35,13 @@ int	check_sign(char *str, int *sign)
 	return (i);
 }
 
-double	ft_atof(char *str)
+/***
+ * @brief 
+ * 
+ * @param str - array to be converted into a float
+ * @return double - or -1 if it fails
+*/
+double	ft_atof(const char *str)
 {
 	int		i;
 	int		sign;
