@@ -6,12 +6,27 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/13 11:27:22 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/04/10 16:46:49 by SarahLouise   ########   odam.nl         */
+/*   Updated: 2023/06/21 14:13:49 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief
+ * writes len bytes of value c (converted to an unsigned char)
+ * to the string b. 
+ * c is set as an int but the function fills 
+ * the block of memory using the 
+ * unsigned char converstion of this value.
+ * 
+ * 
+ * @param b void pointer to the block of memory to fill 
+ * @param c int value to be set
+ * @param len size_t number of bytes to be set to the value
+ * @return
+ * its first argument
+*/
 void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*ptr;
