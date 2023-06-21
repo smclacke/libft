@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/03/04 16:01:22 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/06/20 23:59:30 by SarahLouise   ########   odam.nl         */
+/*   Updated: 2023/06/21 14:17:18 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
  * @brief parses the array and checks whether there is an positive or negative
  * changes sign variable from positive to negative if '-' is found. 
  * 
- * @param str - array to convert
- * @param sign - positive or negative 
- * @return int - index after positive or negative sign
+ * @param str array to convert
+ * @param sign positive or negative 
+ * @return index after positive or negative sign
  */
 int	check_sign(char *str, int *sign)
 {

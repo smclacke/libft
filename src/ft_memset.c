@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/13 11:27:22 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/06/21 14:13:49 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/06/21 14:18:23 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,7 @@
  * @param b void pointer to the block of memory to fill 
  * @param c int value to be set
  * @param len size_t number of bytes to be set to the value
- * @return
- * its first argument
+ * @return its first argument
 */
 void	*ft_memset(void *b, int c, size_t len)
 {
