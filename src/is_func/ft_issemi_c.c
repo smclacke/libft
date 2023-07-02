@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_is_dollar.c                                     :+:    :+:            */
+/*   ft_is_semi_c.c                                     :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: SarahLouise <SarahLouise@student.codam.      +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/07/02 14:54:30 by SarahLouise   #+#    #+#                 */
-/*   Updated: 2023/07/02 15:03:10 by SarahLouise   ########   odam.nl         */
+/*   Created: 2023/07/02 14:56:39 by SarahLouise   #+#    #+#                 */
+/*   Updated: 2023/07/02 15:14:18 by SarahLouise   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
-bool	ft_is_dollar(int c)
+bool	ft_issemi_c(int c)
 {
-	return (c == '$');
+	return (c == ';');
 }

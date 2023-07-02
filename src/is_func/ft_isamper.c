@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_is_semi_c.c                                     :+:    :+:            */
+/*   ft_is_amper.c                                      :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: SarahLouise <SarahLouise@student.codam.      +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2023/07/02 14:56:39 by SarahLouise   #+#    #+#                 */
-/*   Updated: 2023/07/02 15:03:24 by SarahLouise   ########   odam.nl         */
+/*   Created: 2023/07/02 14:56:07 by SarahLouise   #+#    #+#                 */
+/*   Updated: 2023/07/02 15:11:21 by SarahLouise   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../include/libft.h"
 
-bool	ft_is_semi_c(int c)
+bool	ft_isamper(int c)
 {
-	return (c == ';');
+	return (c == '&');
 }

@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/05/12 14:53:21 by smclacke      #+#    #+#                  #
-#    Updated: 2023/07/02 15:08:33 by SarahLouise   ########   odam.nl          #
+#    Updated: 2023/07/02 15:11:11 by SarahLouise   ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,14 +17,14 @@ CFLAGS		= -Wall -Wextra -Werror
 ARCHIVE		= ar rcs
 RM			= rm -f
 
-SRCS		=	is_func/ft_is_single_q.c		\
-				is_func/ft_is_double_q.c		\
-				is_func/ft_is_pipe.c			\
-				is_func/ft_is_dollar.c			\
-				is_func/ft_is_more.c			\
-				is_func/ft_is_less.c			\
-				is_func/ft_is_amper.c			\
-				is_func/ft_is_semi_c.c			\
+SRCS		=	is_func/ft_issingle_q.c		\
+				is_func/ft_isdouble_q.c		\
+				is_func/ft_ispipe.c			\
+				is_func/ft_isdollar.c			\
+				is_func/ft_ismore.c			\
+				is_func/ft_isless.c			\
+				is_func/ft_isamper.c			\
+				is_func/ft_issemi_c.c			\
 				is_func/ft_ishex.c				\
 				is_func/ft_isalpha.c			\
     			is_func/ft_isalnum.c			\
