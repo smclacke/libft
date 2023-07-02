@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/05/12 14:53:21 by smclacke      #+#    #+#                  #
-#    Updated: 2023/07/02 15:16:49 by SarahLouise   ########   odam.nl          #
+#    Updated: 2023/07/02 18:17:14 by SarahLouise   ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,6 +38,7 @@ SRCS		=	is_func/ft_issingle_q.c			\
     			strs/ft_strlen.c				\
     			strs/ft_strnstr.c				\
     			strs/ft_strncmp.c				\
+				strs/ft_strcpy.c				\
     			strs/ft_strlcat.c				\
     			strs/ft_strlcpy.c				\
 				strs/ft_strcmp.c				\
