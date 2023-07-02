@@ -8,6 +8,9 @@
 *My working library built off of libft: a collection of helper functions (42 school project Rank00).*
 *Includes my own additional functions and get_next_line. To be used within other projects and continuously added to when needed.*
 
+Organised in directories:
+		arr, convert, error, gnl, is_func, list, mem, printf, puts, strs
+
 ## ***Functions:***
 
 	Libft mandatory:
