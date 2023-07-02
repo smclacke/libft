@@ -75,3 +75,11 @@
 				ft_arrlen
 				ft_error
 				ft_free_arr
+				ft_is_single_q
+				ft_is_double_q
+				ft_is_pipe
+				ft_is_dollar
+				ft_is_more
+				ft_is_less
+				ft_is_amper
+				ft_is_semi_c

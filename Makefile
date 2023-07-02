@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/05/12 14:53:21 by smclacke      #+#    #+#                  #
-#    Updated: 2023/07/02 14:26:38 by SarahLouise   ########   odam.nl          #
+#    Updated: 2023/07/02 15:08:33 by SarahLouise   ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,66 +17,74 @@ CFLAGS		= -Wall -Wextra -Werror
 ARCHIVE		= ar rcs
 RM			= rm -f
 
-SRCS		=	ft_isalpha.c			\
-    			ft_isalnum.c			\
-    			ft_isascii.c			\
-    			ft_isdigit.c			\
-    			ft_isprint.c			\
-				ft_isquote.c			\
-    			ft_strchr.c				\
-    			ft_strrchr.c			\
-    			ft_strlen.c				\
-    			ft_strnstr.c			\
-    			ft_strncmp.c			\
-    			ft_strlcat.c			\
-    			ft_strlcpy.c			\
-    			ft_atoi.c				\
-    			ft_bzero.c				\
-    			ft_memset.c				\
-    			ft_memcpy.c				\
-    			ft_memcmp.c				\
-    			ft_memmove.c			\
-    			ft_memchr.c				\
-    			ft_tolower.c			\
-    			ft_toupper.c			\
-    			ft_calloc.c				\
-    			ft_strdup.c				\
-    			ft_putchar_fd.c			\
-    			ft_putendl_fd.c			\
-    			ft_putnbr_fd.c			\
-    			ft_putstr_fd.c			\
-    			ft_strjoin.c			\
-    			ft_substr.c				\
-    			ft_striteri.c			\
-    			ft_strtrim.c			\
-    			ft_strmapi.c			\
-    			ft_itoa.c				\
-    			ft_split.c				\
-    			ft_lstadd_back.c		\
-    			ft_lstadd_front.c		\
-    			ft_lstclear.c			\
-    			ft_lstdelone.c			\
-    			ft_lstiter.c			\
-    			ft_lstlast.c			\
-    			ft_lstmap.c				\
-    			ft_lstnew.c				\
-    			ft_lstsize.c			\
-				ft_atof.c				\
-				ft_ishex.c				\
-				ft_isspace.c			\
-				ft_strcmp.c				\
-				ft_lower_str.c			\
-				ft_upper_str.c			\
-				ft_putendl.c			\
-				ft_putstr.c				\
-				ft_putchar.c			\
-				ft_arrlen.c				\
-				ft_error.c				\
-				ft_free_arr.c			\
-				get_next_line.c			\
-				get_next_line_utils.c	\
-				ft_printf_utils.c		\
-				ft_printf.c
+SRCS		=	is_func/ft_is_single_q.c		\
+				is_func/ft_is_double_q.c		\
+				is_func/ft_is_pipe.c			\
+				is_func/ft_is_dollar.c			\
+				is_func/ft_is_more.c			\
+				is_func/ft_is_less.c			\
+				is_func/ft_is_amper.c			\
+				is_func/ft_is_semi_c.c			\
+				is_func/ft_ishex.c				\
+				is_func/ft_isalpha.c			\
+    			is_func/ft_isalnum.c			\
+    			is_func/ft_isascii.c			\
+    			is_func/ft_isdigit.c			\
+    			is_func/ft_isprint.c			\
+				is_func/ft_isquote.c			\
+				is_func/ft_isspace.c			\
+    			strs/ft_strchr.c				\
+    			strs/ft_strrchr.c				\
+    			strs/ft_strlen.c				\
+    			strs/ft_strnstr.c				\
+    			strs/ft_strncmp.c				\
+    			strs/ft_strlcat.c				\
+    			strs/ft_strlcpy.c				\
+				strs/ft_strcmp.c				\
+    			strs/ft_split.c					\
+    			strs/ft_strjoin.c				\
+    			strs/ft_substr.c				\
+    			strs/ft_striteri.c				\
+    			strs/ft_strtrim.c				\
+    			strs/ft_strmapi.c				\
+    			strs/ft_strdup.c				\
+    			mem/ft_bzero.c					\
+    			mem/ft_memset.c					\
+    			mem/ft_memcpy.c					\
+    			mem/ft_memcmp.c					\
+    			mem/ft_memmove.c				\
+    			mem/ft_memchr.c					\
+    			mem/ft_calloc.c					\
+    			convert/ft_atoi.c				\
+				convert/ft_atof.c				\
+    			convert/ft_itoa.c				\
+    			convert/ft_tolower.c			\
+    			convert/ft_toupper.c			\
+				convert/ft_lower_str.c			\
+				convert/ft_upper_str.c			\
+    			puts/ft_putchar_fd.c			\
+    			puts/ft_putendl_fd.c			\
+    			puts/ft_putnbr_fd.c				\
+    			puts/ft_putstr_fd.c				\
+				puts/ft_putchar.c				\
+				puts/ft_putendl.c				\
+				puts/ft_putstr.c				\
+    			list/ft_lstadd_back.c			\
+    			list/ft_lstadd_front.c			\
+    			list/ft_lstclear.c				\
+    			list/ft_lstdelone.c				\
+    			list/ft_lstiter.c				\
+    			list/ft_lstlast.c				\
+    			list/ft_lstmap.c				\
+    			list/ft_lstnew.c				\
+    			list/ft_lstsize.c				\
+				arr/ft_arrlen.c					\
+				arr/ft_free_arr.c				\
+				error/ft_error.c				\
+				gnl/get_next_line.c				\
+				gnl/get_next_line_utils.c		\
+				printf/ft_printf_utils.c		\
+				printf/ft_printf.c
 
 SRC_DIR		= src
 SRC			= $(addprefix $(SRC_DIR)/, $(SRCS))
@@ -105,6 +113,16 @@ $(NAME): $(OBJ)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.c
 	@ mkdir -p $(OBJ_DIR)
+	@ mkdir -p $(OBJ_DIR)/arr
+	@ mkdir -p $(OBJ_DIR)/convert
+	@ mkdir -p $(OBJ_DIR)/error
+	@ mkdir -p $(OBJ_DIR)/gnl
+	@ mkdir -p $(OBJ_DIR)/is_func
+	@ mkdir -p $(OBJ_DIR)/list
+	@ mkdir -p $(OBJ_DIR)/mem
+	@ mkdir -p $(OBJ_DIR)/printf
+	@ mkdir -p $(OBJ_DIR)/puts
+	@ mkdir -p $(OBJ_DIR)/strs
 	@ $(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
