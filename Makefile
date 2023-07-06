@@ -6,7 +6,7 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/05/12 14:53:21 by smclacke      #+#    #+#                  #
-#    Updated: 2023/07/02 18:17:14 by SarahLouise   ########   odam.nl          #
+#    Updated: 2023/07/06 12:08:38 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -63,6 +63,7 @@ SRCS		=	is_func/ft_issingle_q.c			\
     			convert/ft_toupper.c			\
 				convert/ft_lower_str.c			\
 				convert/ft_upper_str.c			\
+				convert/ft_atoi_base.c			\
     			puts/ft_putchar_fd.c			\
     			puts/ft_putendl_fd.c			\
     			puts/ft_putnbr_fd.c				\

@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/15 20:21:40 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/07/02 15:04:27 by SarahLouise   ########   odam.nl         */
+/*   Updated: 2023/07/06 12:18:16 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			i++;
 		}
 		return (0);
-	}	
+	}
 }

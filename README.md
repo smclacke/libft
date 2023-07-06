@@ -87,3 +87,4 @@ Organised in directories:
 				ft_is_less
 				ft_is_amper
 				ft_is_semi_c
+				ft_atoi_base
