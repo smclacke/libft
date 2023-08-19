@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/19 16:28:48 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/07/02 15:02:31 by SarahLouise   ########   odam.nl         */
+/*   Updated: 2023/07/06 12:17:51 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	ft_count(long n)
 	{
 		n *= -1;
 		count++;
-	}	
+	}
 	while (n > 0)
 	{
 		n /= 10;

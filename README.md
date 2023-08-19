@@ -70,7 +70,7 @@ Organised in directories:
 				ft_ishex
 				ft_isspace
 				ft_strcmp
-				ft_strcpy.c
+				ft_strcpy
 				ft_lower_str
 				ft_upper_str
 				ft_putendl
@@ -87,3 +87,4 @@ Organised in directories:
 				ft_is_less
 				ft_is_amper
 				ft_is_semi_c
+				ft_atoi_base
