@@ -1,6 +1,9 @@
 # ignore all
 *
 
+# Unignore Makefile
+!Makefile
+
 # Unignore all dirs
 !*/
 
