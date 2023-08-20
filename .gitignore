@@ -1,5 +1,5 @@
-# ignore all
-*
+# Unignore Makefile
+!Makefile
 
 # Unignore Makefile
 !Makefile
@@ -9,9 +9,6 @@
 
 # Unignore all with extensions
 !*.*
-
-# gitignore
-.gitignore
 
 # Object files
 *.o
