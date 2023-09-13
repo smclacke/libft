@@ -6,7 +6,7 @@
 /*   By: SarahLouise <SarahLouise@student.42.fr>      +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/11 19:21:06 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/07/06 12:10:05 by smclacke      ########   odam.nl         */
+/*   Updated: 2023/09/13 20:04:25 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -179,21 +179,7 @@ void	ft_free_arr(char **arr);
 
 int		ft_isquote(int c);
 
-bool	ft_issingle_q(int c);
-
-bool	ft_isdouble_q(int c);
-
 bool	ft_ispipe(int c);
-
-bool	ft_isdollar(int c);
-
-bool	ft_ismore(int c);
-
-bool	ft_isless(int c);
-
-bool	ft_isamper(int c);
-
-bool	ft_issemi_c(int c);
 
 char	*ft_strcpy(char *dest, char *src);
 
