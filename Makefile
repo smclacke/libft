@@ -6,11 +6,13 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/05/12 14:53:21 by smclacke      #+#    #+#                  #
-#    Updated: 2023/07/06 12:08:38 by smclacke      ########   odam.nl          #
+#    Updated: 2023/09/13 20:01:05 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= libft.a
+
+# check
 
 CC			= gcc
 CFLAGS		= -Wall -Wextra -Werror
