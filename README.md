@@ -69,6 +69,7 @@ Organised in directories:
 				ft_atof
 				ft_ishex
 				ft_isspace
+				ft_ismeta
 				ft_strcmp
 				ft_strcpy
 				ft_lower_str
@@ -79,12 +80,6 @@ Organised in directories:
 				ft_arrlen
 				ft_error
 				ft_free_arr
-				ft_is_single_q
-				ft_is_double_q
-				ft_is_pipe
-				ft_is_dollar
-				ft_is_more
-				ft_is_less
-				ft_is_amper
-				ft_is_semi_c
+				ft_isquote
+				ft_ispipe
 				ft_atoi_base
