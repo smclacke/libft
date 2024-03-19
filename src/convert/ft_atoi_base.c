@@ -6,18 +6,12 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/07/06 12:08:48 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/07/06 12:17:21 by smclacke      ########   odam.nl         */
+/*   Updated: 2024/03/19 14:26:01 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
-
-/*
-	Convert a string into a base 10 integer.
-	og function from 42: int	ft_atoi_base(const char *str, int base)
-	but norm errors so...
-*/
 
 char	*check_sign(char *str, int sign)
 {
