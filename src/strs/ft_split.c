@@ -6,7 +6,7 @@
 /*   By: smclacke <smclacke@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/10/19 16:31:47 by smclacke      #+#    #+#                 */
-/*   Updated: 2023/07/02 15:06:11 by SarahLouise   ########   odam.nl         */
+/*   Updated: 2024/04/20 16:22:57 by smclacke      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,21 @@ char	**ft_split(char const *s, char c)
 	if (!arr)
 		return (0);
 	if (!(ft_letters(s, c, arr)))
+	{
+		ft_free(arr, ft_words(s, c));
 		return (NULL);
+	}
 	return (arr);
 }
+
+// int	main()
+// {
+// 	char	*str = "this string in pieces";
+// 	char	c = ' ';
+// 	char	**array;
+
+// 	array = ft_split(str, c);
+// 	for (int i = 0; array[i] != NULL; i++)
+// 		printf("array = %s\n", array[i]);
+// 	return (0);
+// }
