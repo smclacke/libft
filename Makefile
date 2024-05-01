@@ -6,14 +6,15 @@
 #    By: smclacke <smclacke@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2023/05/12 14:53:21 by smclacke      #+#    #+#                  #
-#    Updated: 2024/04/20 16:21:07 by smclacke      ########   odam.nl          #
+#    Updated: 2024/05/01 13:45:11 by smclacke      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		= libft.a
 
-CC			= gcc
-CFLAGS		= -Wall -Wextra -Werror -g -fsanitize=address
+CC			= cc
+CFLAGS		= -Wall -Wextra -Werror 
+CFLAGS		+= -g -fsanitize=address
 ARCHIVE		= ar rcs
 RM			= rm -f
 
